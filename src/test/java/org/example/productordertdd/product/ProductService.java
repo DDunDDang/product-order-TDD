@@ -1,5 +1,8 @@
 package org.example.productordertdd.product;
 
+import org.springframework.stereotype.Component;
+
+@Component
 class ProductService {
     private final ProductPort productPort;
 
