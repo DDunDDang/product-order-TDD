@@ -3,12 +3,11 @@ package org.example.productordertdd.product;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
+import org.assertj.core.api.AssertionsForClassTypes;
 import org.example.productordertdd.ApiTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class ProductApiTest extends ApiTest {
 
@@ -18,7 +17,7 @@ class ProductApiTest extends ApiTest {
 
         final var response = 상품등록요청(request);
 
-        assertThat(response.statusCode()).isEqualTo(HttpStatus.CREATED.value());
+        AssertionsForClassTypes.assertThat(response.statusCode()).isEqualTo(HttpStatus.CREATED.value());
     }
 
     private static ExtractableResponse<Response> 상품등록요청(AddProductRequest request) {
