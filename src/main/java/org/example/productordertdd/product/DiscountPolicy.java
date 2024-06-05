@@ -1,6 +1,6 @@
 package org.example.productordertdd.product;
 
-enum DiscountPolicy {
+public enum DiscountPolicy {
     NONE
 
 }
