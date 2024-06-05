@@ -1,8 +1,11 @@
 package org.example.productordertdd.order;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 class OrderRepository {
     private Map<Long, Order> persistance = new HashMap<>();
     private Long sequence = 0L;

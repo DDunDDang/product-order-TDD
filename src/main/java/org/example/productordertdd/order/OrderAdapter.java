@@ -2,7 +2,9 @@ package org.example.productordertdd.order;
 
 import org.example.productordertdd.product.Product;
 import org.example.productordertdd.product.ProductRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 class OrderAdapter implements OrderPort {
     private final ProductRepository productRepository;
     private final OrderRepository orderRepository;
