@@ -3,6 +3,9 @@ package org.example.productordertdd.product;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
+import org.example.productordertdd.product.application.service.AddProductRequest;
+import org.example.productordertdd.product.application.service.UpdateProductRequest;
+import org.example.productordertdd.product.domain.DiscountPolicy;
 import org.springframework.http.MediaType;
 
 public class ProductSteps {

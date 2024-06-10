@@ -1,9 +1,9 @@
-package org.example.productordertdd.payment;
+package org.example.productordertdd.payment.adapter;
 
-import org.example.productordertdd.order.Order;
-import org.example.productordertdd.order.OrderRepository;
-import org.example.productordertdd.product.DiscountPolicy;
-import org.example.productordertdd.product.Product;
+import org.example.productordertdd.order.domain.Order;
+import org.example.productordertdd.order.adapter.OrderRepository;
+import org.example.productordertdd.payment.application.port.PaymentPort;
+import org.example.productordertdd.payment.domain.Payment;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -28,6 +28,7 @@ class PaymentAdapter implements PaymentPort {
     public void pay(final int totalPrice, final String cardNumber) {
         paymentGateway.excute(totalPrice, cardNumber);
     }
+
 
     @Override
     public void save(Payment payment) {

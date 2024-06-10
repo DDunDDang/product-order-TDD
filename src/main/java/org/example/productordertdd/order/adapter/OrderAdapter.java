@@ -1,7 +1,9 @@
-package org.example.productordertdd.order;
+package org.example.productordertdd.order.adapter;
 
-import org.example.productordertdd.product.Product;
-import org.example.productordertdd.product.ProductRepository;
+import org.example.productordertdd.order.application.port.OrderPort;
+import org.example.productordertdd.order.domain.Order;
+import org.example.productordertdd.product.domain.Product;
+import org.example.productordertdd.product.adapter.ProductRepository;
 import org.springframework.stereotype.Component;
 
 @Component
